@@ -423,6 +423,12 @@ header {
       height: auto;
       max-height: 450px;
     }
+    @media (max-width: 576px) {
+      min-height: 130px;
+    }
+    @media (max-width: 350px) {
+      min-height: unset;
+    }
 
     .swiper-pagination {
       bottom: 20px;
