@@ -1,0 +1,53 @@
+$color1: #1fa78c;
+$color2: #f88442;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+}
+*:focus {
+  outline: none !important;
+}
+
+a {
+  color: black;
+
+  &:hover {
+    color: $color1;
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.col-xs-6 {
+  width: auto;
+  @media (min-width: 576px) {
+    width: 50%;
+  }
+}
+
+.ml-auto{
+  margin-left: auto !important;
+}
+.mr-auto{
+  margin-right: auto !important;
+}
+.mx-auto{
+  margin-right: auto !important;
+  margin-left: auto !important;
+}

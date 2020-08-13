@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/vendor/all.min.css">
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/vendor/swiper-bundle.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" />
+    <title>TRIPLE CARD</title>
+</head>
+
+<body>
+
+    <nav id="nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 header-nav">
+                    <div class="header-icons flex-center" id="header-icons">
+                        <div class="shopping-cart">
+                            <img src="./assets/img/icons/cart.png" alt="cart">
+                            <div class="num flex-center">0</div>
+                        </div>
+                        <div class="search">
+                            <form action="#" id="search-form1">
+                                <input type="text" id="search-input" name="search" value="" placeholder="search..." class="form-control">
+                            </form>
+                            <button type="button" onclick="search()"><i class="fa fa-search"></i></button>
+                        </div>
+                        <div class="account">
+                            <a href="#"><i class="far fa-user"></i></a>
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="active"> <a href="#"> Main </a></li>
+                        <li> <a href="#"> Offers </a></li>
+                        <li> <a href="#"> All cards </a></li>
+                        <li> <a href="#"> Best Seller </a></li>
+                        <li> <a href="#"> Contact us </a></li>
+                        <li> <a href="./index.html"> عربى </a></li>
+                    </ul>
+                    <div class="cart-small col-6 flex-center">
+                        <div id="sec-icon">
+                            <span><i class="fas fa-bars"></i></span>
+                        </div>
+                        <!-- <div class="small-search" id="sec-search-icon">
+                            <i class="fas fa-search"></i>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-sm-3 logo">
+                    <img src="./assets/img/logo.png" alt="triple card logo">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./assets/img/header/1.jpg" alt="slide1 banner">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/header/1.jpg" alt="slide1 banner">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/header/1.jpg" alt="slide1 banner">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/header/1.jpg" alt="slide1 banner">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/header/1.jpg" alt="slide1 banner">
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <!-- navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- best seller -->
+        <section id="best-seller">
+            <div class="container">
+                <div class="best-seller-head s-head">
+                    <a href="#">show nore</a>
+                    <h3>
+                        Best Seller
+                    </h3>
+                </div>
+                <div class="row best-seller-slider">
+                    <div class="best-seller-swiper-container s-container">
+                        <!-- slider slides -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/best-seller/1.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/best-seller/2.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/best-seller/3.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/best-seller/4.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/best-seller/5.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- banners -->
+        <section id="banners">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6"><img src="./assets/img/banners/banner1.png" alt="banner1"></div>
+                    <div class="col-xs-6"><img src="./assets/img/banners/banner2.png" alt="banner2"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- itunes -->
+        <section id="itunes">
+            <div class="container">
+                <div class="itunes-head s-head">
+                    <a href="#">show nore</a>
+                    <h3>
+                        Itunes
+                    </h3>
+                </div>
+                <div class="row itunes-slider">
+                    <div class="itunes-swiper-container s-container">
+                        <!-- slider slides -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/itunes/1.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/itunes/2.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/itunes/3.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/itunes/4.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/itunes/5.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- google play -->
+        <section id="google" class="gray-section">
+            <div class="container">
+                <div class="google-head s-head">
+                    <a href="#">show nore</a>
+                    <h3>
+                        Google Play
+                    </h3>
+                </div>
+                <div class="row google-slider">
+                    <div class="google-swiper-container s-container">
+                        <!-- slider slides -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/google/1.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/google/2.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/google/3.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/google/4.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/google/5.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- jawal -->
+        <section id="jawal">
+            <div class="container">
+                <div class="jawal-head s-head">
+                    <a href="#">show nore</a>
+                    <h3>
+                        Internt and mobile
+                    </h3>
+                </div>
+                <div class="row jawal-slider">
+                    <div class="jawal-swiper-container s-container">
+                        <!-- slider slides -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/jawal/1.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/jawal/2.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/jawal/3.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/jawal/4.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/jawal/5.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ps -->
+        <section id="ps" class="gray-section">
+            <div class="container">
+                <div class="ps-head s-head">
+                    <a href="#">show nore</a>
+                    <h3>
+                        Playstation
+                    </h3>
+                </div>
+                <div class="row ps-slider">
+                    <div class="ps-swiper-container s-container">
+                        <!-- slider slides -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/ps/1.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/ps/2.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/ps/3.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/ps/4.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/ps/5.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- online-games -->
+        <section id="online-games">
+            <div class="container">
+                <div class="online-games-head s-head">
+                    <a href="#">show nore</a>
+                    <h3>
+                        Online Games
+                    </h3>
+                </div>
+                <div class="row online-games-slider">
+                    <div class="online-games-swiper-container s-container">
+                        <!-- slider slides -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/online-games/1.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/online-games/2.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/online-games/3.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/online-games/4.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/online-games/5.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- internet-connection -->
+        <section id="internet-connection" class="gray-section">
+            <div class="container">
+                <div class="internet-connection-head s-head">
+                    <a href="#">show nore</a>
+                    <h3>
+                        Internet Connection
+                    </h3>
+                </div>
+                <div class="row internet-connection-slider">
+                    <div class="internet-connection-swiper-container s-container">
+                        <!-- slider slides -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/internet-connection/1.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/internet-connection/2.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/internet-connection/3.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/internet-connection/4.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/internet-connection/5.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- home-games -->
+        <section id="home-games">
+            <div class="container">
+                <div class="home-games-head s-head">
+                    <a href="#">show nore</a>
+                    <h3>
+                        Home Games
+                    </h3>
+                </div>
+                <div class="row home-games-slider">
+                    <div class="home-games-swiper-container s-container">
+                        <!-- slider slides -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/home-games/1.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/home-games/2.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/home-games/3.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/home-games/4.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/home-games/5.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- shopping -->
+        <section id="shopping" class="gray-section">
+            <div class="container">
+                <div class="shopping-head s-head">
+                    <a href="#">show nore</a>
+                    <h3>
+                        Shopping Cards
+                    </h3>
+                </div>
+                <div class="row shopping-slider">
+                    <div class="shopping-swiper-container s-container">
+                        <!-- slider slides -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/shopping/1.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/shopping/2.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/shopping/3.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/shopping/4.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/shopping/5.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- others -->
+        <section id="others">
+            <div class="container">
+                <div class="others-head s-head">
+                    <a href="#">show nore</a>
+                    <h3>
+                        Others
+                    </h3>
+                </div>
+                <div class="row others-slider">
+                    <div class="others-swiper-container s-container">
+                        <!-- slider slides -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/others/1.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/others/2.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/others/3.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/others/4.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./assets/img/sliders/others/5.png" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h4> <a href="#"> Product Name</a></h4>
+                                    <div class="price flex-center">
+                                        <div class="price-sale"> <span>SR</span> <span>345</span></div>
+                                        <span>SR</span> <span>300</span>
+                                    </div>
+                                </div>
+                                <div class="buy flex-center">
+                                    <a href="#" class="btn btn-success">
+                                        Add to cart <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- features -->
+        <section id="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 feature mx-auto">
+                        <h4>We work hard to provide an outstanding service</h4>
+                        <img src="./assets/img/features/feature1.png" alt="feature">
+                    </div>
+                    <div class="col-sm-4 feature mx-auto">
+                        <h4>Multiple and secure payment methods through trusted payment gateways</h4>
+                        <img src="./assets/img/features/feature2.png" alt="feature">
+                    </div>
+                    <div class="col-sm-4 feature mx-auto">
+                        <h4>Exclusive offers and competitive prices</h4>
+                        <img src="./assets/img/features/feature3.png" alt="feature">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="./assets/img/logo.png" alt="logo">
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">Common Questions</a></li>
+                    <li><a href="#">Usage policies</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Payment process steps</a></li>
+                    <li><a href="#">payment methods</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <div class="twitter"><a href="#"> <i class="fab fa-twitter"></i></a></div>
+                <div class="instagram"><a href="#"><i class="fab fa-instagram"></i></a></div>
+                <div class="snap"><a href="#"><i class="fab fa-snapchat-ghost"></i></a></div>
+                <div class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+            </div>
+            <div class="footer-pay">
+                <img src="./assets/img/pay/1.png" alt="payment">
+                <img src="./assets/img/pay/2.png" alt="payment">
+                <img src="./assets/img/pay/3.png" alt="payment">
+                <img src="./assets/img/pay/4.png" alt="payment">
+                <img src="./assets/img/pay/5.png" alt="payment">
+                <img src="./assets/img/pay/6.png" alt="payment">
+            </div>
+            <div class="copy">
+                &copy; Triple Card - Design and Developed by <img src="./assets/img/icons/favicon.png" alt="logo"> <span>تسوق</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- small-nav -->
+    <section id="sec-nav">
+
+        <div id="sec-items">
+            <div class="sec-head">
+                <div id="close-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="mr-auto">
+                    <a href="#">Main</a>
+                </div>
+            </div>
+            <div class="search">
+                <form action="#" id="search-form2">
+                    <input type="text" id="search-input" name="search" value="" placeholder="search..." class="form-control">
+                </form>
+                <button type="button" onclick="document.getElementById('search-form2').submit()"><i class="fa fa-search"></i></button>
+            </div>
+            <ul>
+                <li>
+                    <a href="./index.html">عربى</a>
+                </li>
+                <li>
+                    <a href="#"><span> <i class="far fa-user"></i> </span> Account</a>
+                </li>
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+                <li>
+                    <a href="#">Best Seller</a>
+                </li>
+                <li>
+                    <a href="#">All cards</a>
+                </li>
+                <li>
+                    <a href="#">Offers</a>
+                </li>
+            </ul>
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <script src="./assets/js/vendor/jquery.min.js"></script>
+    <script src="./assets/js/vendor/all.min.js"></script>
+    <script src="./assets/js/vendor/bootstrap.min.js"></script>
+    <script src="./assets/js/vendor/swiper-bundle.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
