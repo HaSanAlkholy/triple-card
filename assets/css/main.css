@@ -520,6 +520,18 @@ header .swiper-container {
   }
 }
 
+@media (max-width: 576px) {
+  header .swiper-container {
+    min-height: 130px;
+  }
+}
+
+@media (max-width: 350px) {
+  header .swiper-container {
+    min-height: unset;
+  }
+}
+
 header .swiper-container .swiper-pagination {
   bottom: 20px;
 }
