@@ -417,10 +417,11 @@ header {
   margin-top: 25px;
   .swiper-container {
     width: 100%;
-    max-height: 450px;
-
+    height: 450px;
+    
     @media (max-width: 768px) {
       height: auto;
+      max-height: 450px;
     }
 
     .swiper-pagination {
