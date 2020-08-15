@@ -238,7 +238,6 @@ nav {
       .search {
         display: flex;
         position: relative;
-        margin-right:10px;
 
         form{
           width:0;
@@ -258,7 +257,7 @@ nav {
           border: none;
           background-color: transparent;
           transition: all 0.5s;
-          left: 106%;
+          left: 100%;
           top: 50%;
           transition: all 1s;
           &:hover {

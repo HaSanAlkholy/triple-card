@@ -1,3 +1,5 @@
+let inp = document.getElementById('search-input')
+let sBtn = document.getElementById('sBtn');
 // first slider
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
@@ -94,6 +96,9 @@ function scrolled() {
 
 //search
 
+sBtn.addEventListener('click', search);
+
+
 function search() {
 
   if (!document.getElementById('header-icons').classList.contains('header-icons-active')) {
@@ -101,14 +106,17 @@ function search() {
     $('#header-icons .shopping-cart').fadeOut(1000);
     $('#header-icons .account').fadeOut(1000);
     $('#header-icons').addClass('header-icons-active');
+    input();
 
-  } else if (!document.getElementById('search-input').value) {
+  } else if (!inp.value) {
 
     $('#header-icons .shopping-cart').fadeIn(1000);
     $('#header-icons .account').fadeIn(1000);
     $('#header-icons').removeClass('header-icons-active');
+    sBtn.innerHTML = '<span><i class="fa fa-search"></i></span>';
 
-  } else if (document.getElementById('search-input').value) {
+
+  } else if (inp.value) {
 
     document.getElementById('search-form1').submit();
 
@@ -116,5 +124,21 @@ function search() {
 
 }
 
+//input
+
+
+inp.addEventListener('input', input);
+
+function input() {
+
+  let val = inp.value;
+
+  if (!val) {
+    sBtn.innerHTML = '<span><i class="fas fa-times"></i></span>';
+  } else {
+    sBtn.innerHTML = '<span><i class="fa fa-search"></i></span>';
+  }
+
+}
 
 

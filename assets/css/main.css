@@ -312,7 +312,6 @@ nav .header-nav .header-icons .shopping-cart:hover .num {
 nav .header-nav .header-icons .search {
   display: flex;
   position: relative;
-  margin-right: 10px;
 }
 
 nav .header-nav .header-icons .search form {
@@ -333,7 +332,7 @@ nav .header-nav .header-icons .search button {
   border: none;
   background-color: transparent;
   transition: all 0.5s;
-  left: 106%;
+  left: 100%;
   top: 50%;
   transition: all 1s;
 }
