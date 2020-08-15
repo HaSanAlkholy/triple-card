@@ -29,7 +29,7 @@ var mySwiper = new Swiper('.s-container', {
   slidesPerView: 5,
   spaceBetween: 10,
   autoplay: {
-    delay: 4000,
+    delay: 3000,
   },
   breakpoints: {
     // when window width is >= 480px
@@ -95,17 +95,25 @@ function scrolled() {
 //search
 
 function search() {
+
   if (!document.getElementById('header-icons').classList.contains('header-icons-active')) {
+
     $('#header-icons .shopping-cart').fadeOut(1000);
     $('#header-icons .account').fadeOut(1000);
     $('#header-icons').addClass('header-icons-active');
+
   } else if (!document.getElementById('search-input').value) {
+
     $('#header-icons .shopping-cart').fadeIn(1000);
     $('#header-icons .account').fadeIn(1000);
     $('#header-icons').removeClass('header-icons-active');
+
   } else if (document.getElementById('search-input').value) {
+
     document.getElementById('search-form1').submit();
+
   }
+
 }
 
 
