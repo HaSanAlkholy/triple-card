@@ -893,7 +893,7 @@ footer .copy span {
   font-size: 20px;
   color: black;
   overflow-x: hidden;
-  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media (max-width: 576px) {
@@ -1081,6 +1081,8 @@ html:lang(en) #features .feature img {
 html:lang(en) #sec-nav #sec-items {
   right: unset;
   left: 0;
+  padding-right: 1rem;
+  padding-left: 0;
 }
 
 html:lang(en) #sec-nav #sec-items .sec-head {
@@ -1102,5 +1104,27 @@ html:lang(en) #sec-nav #sec-items .search button {
 
 html:lang(en) #sec-nav #sec-items li {
   text-align: left;
+}
+
+html:lang(en) #sec-nav #sec-items li span {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 0;
+  background-color: #caffe27a;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  box-shadow: inset 0 0 10px #11866f;
+  background: #1FA78C;
 }
 /*# sourceMappingURL=main.css.map */
