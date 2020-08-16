@@ -2,7 +2,7 @@
 
 $(window).on('load', function () {
   $('.pre-loader').fadeOut("500", function () {
-      $('body').removeClass("overflow");
+      $('html').removeClass("overflow");
       $(this).remove();
   });
 });
