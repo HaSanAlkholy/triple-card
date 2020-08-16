@@ -393,7 +393,7 @@ nav .header-nav .header-icons {
 
 @media (max-width: 576px) {
   nav .header-nav .header-icons {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
@@ -450,6 +450,7 @@ nav .header-nav .header-icons .search {
 nav .header-nav .header-icons .search form {
   width: 0;
   height: 0;
+  z-index: -1;
 }
 
 nav .header-nav .header-icons .search input {
@@ -480,6 +481,7 @@ nav .header-nav .header-icons-active .account {
 nav .header-nav .header-icons-active .search form {
   width: auto;
   height: auto;
+  z-index: auto;
 }
 
 nav .header-nav .header-icons-active .search input {
