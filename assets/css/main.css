@@ -58,10 +58,6 @@ ul {
   margin-left: auto !important;
 }
 
-.overflow {
-  overflow: hidden !important;
-}
-
 body,
 html {
   overflow-x: hidden;
@@ -1128,6 +1124,14 @@ html[dir="ltr"] .s-head {
   flex-direction: row-reverse;
 }
 
+@media (max-width: 576px) {
+  html[dir="ltr"] .s-head {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 html[dir="ltr"] .s-head h3 {
   margin-left: 0;
   margin-right: auto;
@@ -1135,6 +1139,15 @@ html[dir="ltr"] .s-head h3 {
   border-right: none;
   padding-left: 15px;
   text-align: left;
+}
+
+@media (max-width: 576px) {
+  html[dir="ltr"] .s-head h3 {
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-bottom: 10px;
+  }
 }
 
 html[dir="ltr"] .product .price {
