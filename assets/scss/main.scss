@@ -296,7 +296,7 @@ nav {
         font-size: 14px;
       }
       @media (max-width: 576px) {
-        font-size: 16px;
+        font-size: 17px;
       }
 
       & > div {
@@ -348,6 +348,7 @@ nav {
         form {
           width: 0;
           height: 0;
+          z-index: -1;
         }
 
         input {
@@ -381,6 +382,7 @@ nav {
         form {
           width: auto;
           height: auto;
+          z-index: auto;
         }
         input {
           width: 100%;
