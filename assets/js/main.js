@@ -1,3 +1,13 @@
+//loader
+
+$(window).on('load', function () {
+  $('.pre-loader').fadeOut("500", function () {
+      $('body').removeClass("overflow");
+      $(this).remove();
+  });
+});
+
+
 let inp = document.getElementById('search-input')
 let sBtn = document.getElementById('sBtn');
 // first slider
