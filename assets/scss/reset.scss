@@ -7,10 +7,12 @@ $color2: #f88442;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Tajawal", sans-serif;
 }
 *:focus {
   outline: none !important;
+}
+*{
+  font-family: "Tajawal", sans-serif;
 }
 
 a {

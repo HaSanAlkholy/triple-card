@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/vendor/all.min.css">
+    <link rel="stylesheet" href="./assets/css/vendor/linear.css">
     <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/vendor/swiper-bundle.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -22,17 +23,18 @@
                 <div class="col-sm-9 header-nav">
                     <div class="header-icons flex-center" id="header-icons">
                         <div class="shopping-cart">
-                            <img src="./assets/img/icons/cart.png" alt="cart">
+                            <span class="lnr lnr-cart"></span>
                             <div class="num flex-center">0</div>
                         </div>
                         <div class="search">
                             <form action="#" id="search-form1">
-                                <input type="text" id="search-input" name="search" value="" placeholder="...ابحث" class="form-control">
+                                <input type="text" id="search-input" name="search" value="" placeholder="...ابحث"
+                                    class="form-control">
                             </form>
-                            <button type="button" id="sBtn"><span><i class="fa fa-search"></i></span></button>
+                            <button type="button" id="sBtn"><span class="lnr lnr-magnifier"></span></button>
                         </div>
                         <div class="account">
-                            <a href="#"><i class="far fa-user"></i></a>
+                            <a href="#"><span class="lnr lnr-user"></span></a>
                         </div>
                     </div>
                     <ul>
@@ -65,19 +67,19 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <img src="./assets/img/header/1.jpg" alt="slide1 banner">
+                        <a href="#"><img src="./assets/img/header/1.jpg" alt="slide1 banner"></a>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/img/header/1.jpg" alt="slide1 banner">
+                        <a href="#"><img src="./assets/img/header/1.jpg" alt="slide1 banner"></a>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/img/header/1.jpg" alt="slide1 banner">
+                        <a href="#"><img src="./assets/img/header/1.jpg" alt="slide1 banner"></a>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/img/header/1.jpg" alt="slide1 banner">
+                        <a href="#"><img src="./assets/img/header/1.jpg" alt="slide1 banner"></a>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/img/header/1.jpg" alt="slide1 banner">
+                        <a href="#"><img src="./assets/img/header/1.jpg" alt="slide1 banner"></a>
                     </div>
                 </div>
 
@@ -106,99 +108,114 @@
                         <!-- slider slides -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/best-seller/1.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide ">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/best-seller/1.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/best-seller/2.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/best-seller/2.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/best-seller/3.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/best-seller/3.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/best-seller/4.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/best-seller/4.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/best-seller/5.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/best-seller/5.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -216,8 +233,10 @@
         <section id="banners">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-6"><img src="./assets/img/banners/banner1.png" alt="banner1"></div>
-                    <div class="col-xs-6"><img src="./assets/img/banners/banner2.png" alt="banner2"></div>
+                    <div class="col-xs-6"><a href="#"><img src="./assets/img/banners/banner1.png" alt="banner1"></a>
+                    </div>
+                    <div class="col-xs-6"><a href="#"><img src="./assets/img/banners/banner2.png" alt="banner2"></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -236,99 +255,114 @@
                         <!-- slider slides -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/itunes/1.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/itunes/1.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/itunes/2.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/itunes/2.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/itunes/3.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/itunes/3.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/itunes/4.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/itunes/4.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/itunes/5.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/itunes/5.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -356,99 +390,114 @@
                         <!-- slider slides -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/google/1.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/google/1.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/google/2.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/google/2.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/google/3.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/google/3.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/google/4.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/google/4.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/google/5.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/google/5.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -476,99 +525,114 @@
                         <!-- slider slides -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/jawal/1.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/jawal/1.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/jawal/2.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/jawal/2.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/jawal/3.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/jawal/3.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/jawal/4.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/jawal/4.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/jawal/5.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/jawal/5.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -596,99 +660,114 @@
                         <!-- slider slides -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/ps/1.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/ps/1.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/ps/2.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/ps/2.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/ps/3.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/ps/3.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/ps/4.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/ps/4.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/ps/5.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/ps/5.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -716,99 +795,114 @@
                         <!-- slider slides -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/online-games/1.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/online-games/1.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/online-games/2.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/online-games/2.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/online-games/3.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/online-games/3.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/online-games/4.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/online-games/4.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/online-games/5.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/online-games/5.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -836,99 +930,114 @@
                         <!-- slider slides -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/internet-connection/1.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/internet-connection/1.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/internet-connection/2.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/internet-connection/2.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/internet-connection/3.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/internet-connection/3.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/internet-connection/4.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/internet-connection/4.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/internet-connection/5.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/internet-connection/5.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -956,99 +1065,114 @@
                         <!-- slider slides -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/home-games/1.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/home-games/1.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/home-games/2.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/home-games/2.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/home-games/3.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/home-games/3.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/home-games/4.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/home-games/4.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/home-games/5.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/home-games/5.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1076,99 +1200,114 @@
                         <!-- slider slides -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/shopping/1.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/shopping/1.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/shopping/2.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/shopping/2.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/shopping/3.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/shopping/3.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/shopping/4.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/shopping/4.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/shopping/5.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/shopping/5.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1196,99 +1335,114 @@
                         <!-- slider slides -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/others/1.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/others/1.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/others/2.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/others/2.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/others/3.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/others/3.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/others/4.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/others/4.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide project">
-                                <div class="product-img">
-                                    <a href="#">
-                                        <img src="./assets/img/sliders/others/5.png" alt="product">
-                                    </a>
-                                </div>
-                                <div class="product-disc">
-                                    <h4> <a href="#"> اسم منتج تجريبى</a></h4>
-                                    <div class="price flex-center">
-                                        <div class="price-sale"> <span>ريال</span> <span>345</span></div>
-                                        <span>ريال</span> <span>300</span>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="./assets/img/sliders/others/5.png" alt="product">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="buy flex-center">
-                                    <a href="#" class="btn btn-success">
-                                        اضف الى السلة <img src="./assets/img/icons/cart-white.png" alt="shopping-cart">
-                                    </a>
+                                    <div class="product-disc">
+                                        <h4> <a href="#"> اسم منتج تجريبى</a></h4>
+                                        <div class="price flex-center">
+                                            <div class="price-sale"> <span>ريال</span> <span>345</span></div>
+                                            <span>ريال</span> <span>300</span>
+                                        </div>
+                                    </div>
+                                    <div class="buy flex-center">
+                                        <a href="#" class="btn btn-success">
+                                            اضف الى السلة <img src="./assets/img/icons/cart-white.png"
+                                                alt="shopping-cart">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1336,8 +1490,6 @@
                     <li><a href="#">الاسئلة الشائعة</a></li>
                     <li><a href="#">سياسات الاستخدام</a></li>
                     <li><a href="#">شروط الاستخدام</a></li>
-                </ul>
-                <ul>
                     <li><a href="#">خطوات عملية الدفع</a></li>
                     <li><a href="#">طرق الدفع</a></li>
                     <li><a href="#">اتصل بنا</a></li>
@@ -1358,7 +1510,7 @@
                 <img src="./assets/img/pay/6.png" alt="payment">
             </div>
             <div class="copy">
-                تربل كارد - تصميم وتطوير <img src="./assets/img/icons/favicon.png" alt="logo"> <span>تسوق</span> &copy;
+              <img src="./assets/img/icons/footer.png" alt="logo">  تربل كارد - تصميم وتطوير  &copy;
             </div>
         </div>
     </footer>
@@ -1374,12 +1526,6 @@
                 <div class="ml-auto">
                     <a href="#">الرئيسية</a>
                 </div>
-            </div>
-            <div class="search">
-                <form action="#" id="search-form2">
-                    <input type="text" id="search-input" name="search" value="" placeholder="...ابحث" class="form-control">
-                </form>
-                <button type="button" onclick="document.getElementById('search-form2').submit()"><i class="fa fa-search"></i></button>
             </div>
             <ul>
                 <li>

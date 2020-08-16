@@ -13,6 +13,7 @@ var mySwiper = new Swiper('.swiper-container', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   // Navigation arrows
@@ -23,7 +24,7 @@ var mySwiper = new Swiper('.swiper-container', {
 });
 
 //products slider
-var mySwiper = new Swiper('.s-container', {
+var mySwiper2 = new Swiper('.s-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -88,8 +89,10 @@ function scrolled() {
   let nav = document.getElementById('nav');
   if (this.scrollY > 115) {
     nav.classList.add('nav-scrolled');
+    document.querySelector('header').style.marginTop = "152px";
   } else {
     nav.classList.remove('nav-scrolled');
+    document.querySelector('header').style.marginTop = "20px";
   }
 }
 
@@ -103,17 +106,17 @@ function search() {
 
   if (!document.getElementById('header-icons').classList.contains('header-icons-active')) {
 
-    $('#header-icons .shopping-cart').fadeOut(1000);
-    $('#header-icons .account').fadeOut(1000);
+    $('#header-icons .shopping-cart').fadeOut(500);
+    $('#header-icons .account').fadeOut(500);
     $('#header-icons').addClass('header-icons-active');
     input();
 
   } else if (!inp.value) {
 
-    $('#header-icons .shopping-cart').fadeIn(1000);
-    $('#header-icons .account').fadeIn(1000);
+    $('#header-icons .shopping-cart').fadeIn(500);
+    $('#header-icons .account').fadeIn(500);
     $('#header-icons').removeClass('header-icons-active');
-    sBtn.innerHTML = '<span><i class="fa fa-search"></i></span>';
+    sBtn.innerHTML = '<span class="lnr lnr-magnifier"></span>';
 
 
   } else if (inp.value) {
@@ -134,9 +137,9 @@ function input() {
   let val = inp.value;
 
   if (!val) {
-    sBtn.innerHTML = '<span><i class="fas fa-times"></i></span>';
+    sBtn.innerHTML = '<span class="lnr lnr-cross"></span>';
   } else {
-    sBtn.innerHTML = '<span><i class="fa fa-search"></i></span>';
+    sBtn.innerHTML = '<span class="lnr lnr-magnifier"></span>';
   }
 
 }
