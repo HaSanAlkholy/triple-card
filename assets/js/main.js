@@ -9,6 +9,7 @@ $(window).on('load', function () {
 
 
 let inp = document.getElementById('search-input')
+let form = document.getElementById('search-form1')
 let sBtn = document.getElementById('sBtn');
 // first slider
 var mySwiper = new Swiper('.swiper-container', {
@@ -17,7 +18,7 @@ var mySwiper = new Swiper('.swiper-container', {
   loop: true,
   updateOnWindowResize: true,
   autoplay: {
-    delay: 4000,
+    delay: 5000,
   },
 
   // If we need pagination
@@ -42,7 +43,7 @@ var mySwiper2 = new Swiper('.s-container', {
   slidesPerView: 5,
   spaceBetween: 10,
   autoplay: {
-    delay: 3000,
+    delay: 5000,
   },
   breakpoints: {
     // when window width is >= 480px
@@ -77,17 +78,20 @@ var mySwiper2 = new Swiper('.s-container', {
 $('#sec-icon').click(function (e) {
   $('#sec-nav').toggleClass('sec-nav-active');
   $('#sec-items').toggleClass('show');
+  $('html').toggleClass('overflow');
 });
 
 $('#close-btn').click(function (e) {
-  $('#sec-items').toggleClass('show');
-  $('#sec-nav').toggleClass('sec-nav-active');
+  $('#sec-items').removeClass('show');
+  $('#sec-nav').removeClass('sec-nav-active');
+  $('html').removeClass('overflow');
 });
 
 $('#sec-nav').click(function (e) {
   if (e.target.id == "sec-nav" || e.target.id == "sec-search") {
     $('#sec-items').removeClass('show');
     $('#sec-nav').removeClass('sec-nav-active');
+    $('html').removeClass('overflow');
   }
 });
 
@@ -99,10 +103,8 @@ function scrolled() {
   let nav = document.getElementById('nav');
   if (this.scrollY > 115) {
     nav.classList.add('nav-scrolled');
-    document.querySelector('header').style.marginTop = "152px";
   } else {
     nav.classList.remove('nav-scrolled');
-    document.querySelector('header').style.marginTop = "20px";
   }
 }
 
@@ -116,8 +118,9 @@ function search() {
 
   if (!document.getElementById('header-icons').classList.contains('header-icons-active')) {
 
-    $('#header-icons .shopping-cart').fadeOut(500);
-    $('#header-icons .account').fadeOut(500);
+    $('#header-icons .shopping-cart').fadeOut(400);
+    $('#header-icons .account').fadeOut(400);
+    $(form).show(500);
     $('#header-icons').addClass('header-icons-active');
     input();
 
@@ -126,6 +129,7 @@ function search() {
     $('#header-icons .shopping-cart').fadeIn(500);
     $('#header-icons .account').fadeIn(500);
     $('#header-icons').removeClass('header-icons-active');
+    $(form).hide(400);
     sBtn.innerHTML = '<span class="lnr lnr-magnifier"></span>';
 
 
@@ -153,5 +157,13 @@ function input() {
   }
 
 }
+
+
+
+
+function show(e){
+  $(e).toggleClass('active');
+}
+
 
 

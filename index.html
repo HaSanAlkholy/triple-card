@@ -38,14 +38,23 @@
                             <div class="num flex-center">0</div>
                         </div>
                         <div class="search">
+                            <button type="button" id="sBtn"><span class="lnr lnr-magnifier"></span></button>
                             <form action="#" id="search-form1">
                                 <input type="text" id="search-input" name="search" value="" placeholder="...ابحث"
                                     class="form-control">
                             </form>
-                            <button type="button" id="sBtn"><span class="lnr lnr-magnifier"></span></button>
                         </div>
-                        <div class="account">
-                            <a href="#"><span class="lnr lnr-user"></span></a>
+                        <div class="dropdown account">
+                            <span class="lnr lnr-user"></span>
+                            </span>
+                            <div class="dropdown-content">
+                                <div>
+                                    <a href="#">تسجيل الدخول</a>
+                                </div>
+                                <div>
+                                    <a href="#">تسجيل جديد</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <ul>
@@ -58,11 +67,8 @@
                     </ul>
                     <div class="cart-small col-6 flex-center">
                         <div id="sec-icon">
-                            <span><i class="fas fa-bars"></i></span>
+                            <span class="lnr lnr-menu"></span>
                         </div>
-                        <!-- <div class="small-search" id="sec-search-icon">
-                            <i class="fas fa-search"></i>
-                        </div> -->
                     </div>
                 </div>
                 <div class="col-xs-5 col-sm-3 logo">
@@ -1501,7 +1507,7 @@
                     <li><a href="#">الاسئلة الشائعة</a></li>
                     <li><a href="#">سياسات الاستخدام</a></li>
                     <li><a href="#">شروط الاستخدام</a></li>
-                    <li><a href="#">خطوات عملية الدفع</a></li>
+                    <li><a href="#">خطوات عملية الشراء</a></li>
                     <li><a href="#">طرق الدفع</a></li>
                     <li><a href="#">اتصل بنا</a></li>
                 </ul>
@@ -1543,7 +1549,11 @@
                     <a href="./index-en.html">English</a>
                 </li>
                 <li>
-                    <a href="#"> الحساب<span> <i class="far fa-user"></i> </span></a>
+                    <div onclick="show('#acc')" class="drop"><i class="fas fa-sort-down"></i> حسابى</div>
+                    <div class="menu" id="acc">
+                        <div><a href="#">تسجيل الدخول</a></div>
+                        <div><a href="#">تسجيل جديد</a></div>
+                    </div>
                 </li>
                 <li>
                     <a href="#">اتصل بنا</a>

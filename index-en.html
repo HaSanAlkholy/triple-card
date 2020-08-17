@@ -44,8 +44,17 @@
                             </form>
                             <button type="button" id="sBtn"><span class="lnr lnr-magnifier"></span></button>
                         </div>
-                        <div class="account">
-                            <a href="#"><span class="lnr lnr-user"></span></a>
+                        <div class="dropdown account">
+                            <span class="lnr lnr-user"></span>
+                            </span>
+                            <div class="dropdown-content">
+                                <div>
+                                    <a href="#">Sign in</a>
+                                </div>
+                                <div>
+                                    <a href="#">Sign up</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <ul>
@@ -58,11 +67,8 @@
                     </ul>
                     <div class="cart-small col-6 flex-center">
                         <div id="sec-icon">
-                            <span><i class="fas fa-bars"></i></span>
+                            <span class="lnr lnr-menu"></span>
                         </div>
-                        <!-- <div class="small-search" id="sec-search-icon">
-                            <i class="fas fa-search"></i>
-                        </div> -->
                     </div>
                 </div>
                 <div class="col-xs-5 col-sm-3 logo">
@@ -1495,11 +1501,11 @@
             </div>
             <div class="footer-nav">
                 <ul>
-                    <li><a href="#">Common Questions</a></li>
-                    <li><a href="#">Usage policies</a></li>
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Payment process steps</a></li>
-                    <li><a href="#">payment methods</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Purchasing Steps</a></li>
+                    <li><a href="#">Payment Methods</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
             </div>
@@ -1518,7 +1524,7 @@
                 <img src="./assets/img/pay/6.png" alt="payment">
             </div>
             <div class="copy">
-                &copy; Triple Card - Design and Developed by <img src="./assets/img/icons/footer.png" alt="logo">
+                &copy; Triple Card - Design and Developed by <img src="./assets/img/icons/footer-en.png" alt="logo">
 
             </div>
         </div>
@@ -1541,7 +1547,11 @@
                     <a href="./index.html">عربى</a>
                 </li>
                 <li>
-                    <a href="#"><span> <i class="far fa-user"></i> </span> Account</a>
+                    <div onclick="show('#acc')" class="drop"> Account <i class="fas fa-sort-down"></i></div>
+                    <div class="menu" id="acc">
+                        <div><a href="#">sign in</a></div>
+                        <div><a href="#">sign up</a></div>
+                    </div>
                 </li>
                 <li>
                     <a href="#">Contact us</a>
