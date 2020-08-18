@@ -120,7 +120,7 @@ function search() {
 
   if (!document.getElementById('header-icons').classList.contains('header-icons-active')) {
 
-    $('#header-icons').fadeOut(300);
+    $('#header-icons').fadeOut(50);
     $('#search-form form').show(500);
     $('#header-icons').addClass('header-icons-active');
     input();
@@ -128,7 +128,7 @@ function search() {
   } else if (!inp.value) {
 
     $('#header-icons').fadeIn(500);
-    $('#search-form form').hide(400);
+    $('#search-form form').hide(500);
     $('#header-icons').removeClass('header-icons-active');
 
   } else if (inp.value) {

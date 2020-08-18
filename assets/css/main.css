@@ -1170,6 +1170,12 @@ html[dir="ltr"] nav .search form {
   margin-left: 30px;
 }
 
+@media (max-width: 576px) {
+  html[dir="ltr"] nav .search form {
+    margin-left: 0px;
+  }
+}
+
 html[dir="ltr"] nav .search input {
   padding-left: 10px;
   text-align: left;
