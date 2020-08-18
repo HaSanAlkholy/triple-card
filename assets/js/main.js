@@ -11,6 +11,7 @@ $(window).on('load', function () {
 let inp = document.getElementById('search-input')
 let form = document.getElementById('search-form1')
 let sBtn = document.getElementById('sBtn');
+let sBtn2 = document.getElementById('sBtn2');
 // first slider
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
@@ -112,26 +113,23 @@ function scrolled() {
 //search
 
 sBtn.addEventListener('click', search);
+sBtn2.addEventListener('click', search);
 
 
 function search() {
 
   if (!document.getElementById('header-icons').classList.contains('header-icons-active')) {
 
-    $('#header-icons .shopping-cart').fadeOut(400);
-    $('#header-icons .account').fadeOut(400);
-    $(form).show(500);
+    $('#header-icons').fadeOut(300);
+    $('#search-form form').show(500);
     $('#header-icons').addClass('header-icons-active');
     input();
 
   } else if (!inp.value) {
 
-    $('#header-icons .shopping-cart').fadeIn(500);
-    $('#header-icons .account').fadeIn(500);
+    $('#header-icons').fadeIn(500);
+    $('#search-form form').hide(400);
     $('#header-icons').removeClass('header-icons-active');
-    $(form).hide(400);
-    sBtn.innerHTML = '<span class="lnr lnr-magnifier"></span>';
-
 
   } else if (inp.value) {
 
@@ -151,9 +149,9 @@ function input() {
   let val = inp.value;
 
   if (!val) {
-    sBtn.innerHTML = '<span class="lnr lnr-cross"></span>';
+    sBtn2.innerHTML = '<span class="lnr lnr-cross"></span>';
   } else {
-    sBtn.innerHTML = '<span class="lnr lnr-magnifier"></span>';
+    sBtn2.innerHTML = '<span class="lnr lnr-magnifier"></span>';
   }
 
 }

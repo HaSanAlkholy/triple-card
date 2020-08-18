@@ -427,6 +427,54 @@ nav .header-nav a:hover {
   color: #1fa78c;
 }
 
+nav .header-nav .search {
+  display: flex;
+  position: relative;
+  transition: all 0.5s;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .header-nav .search form {
+  width: 175px;
+  margin-right: 30px;
+  display: none;
+}
+
+@media (max-width: 576px) {
+  nav .header-nav .search form {
+    width: 150px;
+    margin: 0;
+  }
+}
+
+nav .header-nav .search input {
+  width: 100%;
+  border-radius: 20px;
+  text-align: right;
+  transition: all 0.5s;
+  height: 34px;
+  padding: 6px 25px;
+  padding-right: 10px;
+}
+
+@media (max-width: 992px) {
+  nav .header-nav .search input {
+    height: 25px;
+    padding: 6px 10px;
+  }
+}
+
+nav .header-nav .search button {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
 nav .header-nav .header-icons {
   justify-content: flex-start;
   transition: all 1s;
@@ -490,57 +538,16 @@ nav .header-nav .header-icons .shopping-cart:hover .num {
   transform: rotate(360deg);
 }
 
-nav .header-nav .header-icons .search {
-  display: flex;
-  position: relative;
-  transition: all 0.5s;
-}
-
-nav .header-nav .header-icons .search form {
-  display: none;
-}
-
-nav .header-nav .header-icons .search input {
-  border-radius: 20px;
-  text-align: right;
-  transition: all 0.5s;
-}
-
-nav .header-nav .header-icons .search button {
-  border: none;
+nav .header-nav .header-icons .search-btn button {
   background-color: transparent;
-  transition: all 0.5s;
-}
-
-nav .header-nav .header-icons .search button:hover {
-  color: #1fa78c;
+  outline: none;
+  border: none;
 }
 
 nav .header-nav .header-icons-active .shopping-cart,
 nav .header-nav .header-icons-active .account {
   margin: 0;
   width: 0;
-}
-
-nav .header-nav .header-icons-active .search input {
-  width: 100%;
-  height: 34px;
-  padding: 6px 25px;
-  padding-right: 10px;
-}
-
-@media (max-width: 992px) {
-  nav .header-nav .header-icons-active .search input {
-    height: 25px;
-    padding: 6px 10px;
-  }
-}
-
-nav .header-nav .header-icons-active .search button {
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(0.8) rotate(360deg);
 }
 
 nav .header-nav ul {
@@ -1158,12 +1165,17 @@ html[dir="ltr"] nav .header-icons > div {
   margin-right: 0;
 }
 
-html[dir="ltr"] nav .header-icons-active .search input {
+html[dir="ltr"] nav .search form {
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+html[dir="ltr"] nav .search input {
   padding-left: 10px;
   text-align: left;
 }
 
-html[dir="ltr"] nav .header-icons-active .search button {
+html[dir="ltr"] nav .search button {
   left: 90%;
 }
 
