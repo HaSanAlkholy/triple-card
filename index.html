@@ -32,11 +32,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-7 col-sm-9 header-nav">
-                    <div class="search" id="search-form">
+                    <div class="search" id="search">
+                        <button class="close-search" id="close"> <i class="fas fa-times"></i></button>
                         <form action="#" id="search-form1">
                             <input type="text" id="search-input" name="search" value="" placeholder="...ابحث"
                                 class="form-control">
-                                <button type="button" id="sBtn2"><span class="lnr lnr-cross"></span></button>
+                            <button type="button" id="sBtn2"><span class="lnr lnr-magnifier"></span></button>
                         </form>
                     </div>
                     <div class="header-icons flex-center" id="header-icons">
@@ -1544,20 +1545,10 @@
                     <i class="fas fa-times"></i>
                 </div>
                 <div class="ml-auto">
-                    <a href="#">الرئيسية</a>
+                    <a href="./index-en.html">English</a>
                 </div>
             </div>
             <ul>
-                <li>
-                    <a href="./index-en.html">English</a>
-                </li>
-                <li>
-                    <div onclick="show('#acc')" class="drop"><i class="fas fa-sort-down"></i> حسابى</div>
-                    <div class="menu" id="acc">
-                        <div><a href="#">تسجيل الدخول</a></div>
-                        <div><a href="#">تسجيل جديد</a></div>
-                    </div>
-                </li>
                 <li>
                     <a href="#">اتصل بنا</a>
                 </li>
@@ -1569,6 +1560,16 @@
                 </li>
                 <li>
                     <a href="#">العروض</a>
+                </li>
+                <li>
+                    <div onclick="show('#acc')" class="drop"><span class="lnr lnr-chevron-down mr-auto"></span> حسابى</div>
+                    <div class="menu" id="acc">
+                        <div><a href="#">تسجيل الدخول</a></div>
+                        <div><a href="#">تسجيل جديد</a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">الرئيسية</a>
                 </li>
             </ul>
         </div>

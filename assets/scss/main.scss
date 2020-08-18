@@ -122,30 +122,33 @@ html {
 
   .dropdown-content {
     position: absolute;
-    background-color: #f9f9f9;
     min-width: 100%;
     width: max-content;
     top: 102%;
     right: 50%;
     transform: translateX(50%);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 12px 25px;
     z-index: -1;
     opacity: 0;
     transition: all 0.5s;
     text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px #0000001f;
+    padding: 5px 20px;
+    border-radius: 10px;
 
+    
+    
     a {
       font-size: 16px;
     }
-
+    
     &:before {
       content: "";
       width: 0;
       height: 0;
       display: block;
       border-width: 6px;
-      border-color: transparent transparent #eeeeee;
+      border-color: transparent transparent #ffffff;
       border-style: solid;
       top: -12px;
       position: absolute;
@@ -180,6 +183,7 @@ html {
   .swiper-button-next {
     color: #b3b3b3;
     font-weight: 800;
+    top: 42%;
 
     &:after {
       font-size: 18px;
@@ -311,7 +315,7 @@ html {
 }
 
 nav {
-  max-height: 127px;
+  height: 127px;
   padding: 15px 0;
   background-color: white;
   transition: all 0.75s;
@@ -320,6 +324,10 @@ nav {
   left: 0;
   right: 0;
   z-index: 13;
+
+  @media (max-width: 576px) {
+    height: 85px;
+  }
   .row {
     display: flex;
     height: 100%;
@@ -342,47 +350,85 @@ nav {
 
     .search {
       display: flex;
-      position: relative;
+      flex-direction: column;
+      position: fixed;
       transition: all 0.5s;
       justify-content: center;
       align-items: center;
+      height: 0;
+      width: 0;
+      top: 0;
+      left: 0;
+      background-color: #000000bf;
+      z-index: -1;
+      font-size: 18px;
+      opacity: 0;
+      transition: all 0.7s;
+      @media(max-width: 576px){
+        font-size: 16px;   
+      }
       
       form {
-        width: 175px;
-        margin-right:30px;
-        display: none;
-
-        @media(max-width:576px){
-          width:150px;
-          margin:0;
+        display: block;
+        position: relative;
+        width: 50%;
+        
+        @media(max-width: 576px){
+          width: 85%;
+        }
+        input {
+          width: 100%;
+          border-radius: 20px;
+          text-align: right;
+          transition: all 0.5s;
+          height: 40px;
+          padding: 6px 25px;
+          padding-right: 10px;
+          font-size: 18px;
+          
+          @media(max-width: 576px){
+            font-size: 16px;   
+          }
+        }
+  
+        button{
+          position: absolute;
+          top: 50%;
+          left: 20px;
+          transform: translate(-50%, -50%);
+          border: none;
+          outline: none;
+          background-color: transparent;
         }
       }
 
-      input {
-        width: 100%;
-        border-radius: 20px;
-        text-align: right;
-        transition: all 0.5s;
-        height: 34px;
-        padding: 6px 25px;
-        padding-right: 10px;
-
-        @media (max-width: 992px) {
-          height: 25px;
-          padding: 6px 10px;
-        }
-      }
-
-      button{
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: translate(-50%, -50%);
+      .close-search{
+        margin-bottom: 50px;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
         border: none;
-        outline: none;
-        background-color: transparent;
+        font-size: 18px;
+        transition: color 0.5s;
+
+        &:hover{
+          color:$color2;
+        }
       }
+
     }
+
+    .search-active{
+      z-index: 999 !important;
+      height: 100vh !important;
+      width: 100% !important;
+      opacity: 1 !important;
+    }
+
     .header-icons {
       justify-content: flex-start;
       transition: all 1s;
@@ -446,13 +492,6 @@ nav {
       }
     }
 
-    .header-icons-active {
-      .shopping-cart,
-      .account {
-        margin: 0;
-        width: 0;
-      }
-    }
     ul {
       display: flex;
       align-items: center;
@@ -536,7 +575,6 @@ nav {
 .nav-scrolled {
   box-shadow: 0px 0px 10px 0px #00000017;
   height: 85px;
-  padding: 15px 0;
 
   li {
     a {
@@ -548,7 +586,7 @@ nav {
 header {
   margin-top: 119px;
 
-  @media (max-width: 370px) {
+  @media (max-width: 576px) {
     margin-top: 85px;
   }
   .swiper-container {
@@ -600,7 +638,7 @@ header {
       height: 50px;
       width: 50px;
       border-radius: 100%;
-      top: 42%;
+      top: 50%;
 
       @media (max-width: 576px) {
         display: none;
@@ -881,6 +919,12 @@ footer {
   .drop {
     cursor: pointer;
     transition: all 0.5s;
+    display: flex;
+    align-items: center;
+
+    span{
+      font-size:13px;
+    }
 
     &:hover {
       color: $color1;
@@ -895,7 +939,7 @@ footer {
     height: 100vh;
     opacity: 0;
     transition: all 0.7s;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #fff;
     z-index: 11;
     font-size: 20px;
     color: black;
@@ -913,7 +957,7 @@ footer {
 
     li {
       text-align: right;
-      margin: 1rem 1rem;
+      margin: 7px 1rem;
 
       a {
         color: black;
@@ -1015,14 +1059,6 @@ html[dir="ltr"] {
     }
 
       .search {
-        form{
-          margin-right:0;
-          margin-left:30px;
-          
-          @media(max-width: 576px){
-            margin-left:0px;
-          }
-        }
         input {
           padding-left: 10px;
           text-align: left;

@@ -32,11 +32,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-7 col-sm-9 header-nav">
-                    <div class="search" id="search-form">
+                    <div class="search" id="search">
+                        <button class="close-search" id="close"> <i class="fas fa-times"></i></button>
                         <form action="#" id="search-form1">
                             <input type="text" id="search-input" name="search" value="" placeholder="search..."
                                 class="form-control">
-                                <button type="button" id="sBtn2"><span class="lnr lnr-cross"></span></button>
+                            <button type="button" id="sBtn2"><span class="lnr lnr-magnifier"></span></button>
                         </form>
                     </div>
                     <div class="header-icons flex-center" id="header-icons">
@@ -1542,20 +1543,10 @@
                     <i class="fas fa-times"></i>
                 </div>
                 <div class="mr-auto">
-                    <a href="#">Main</a>
+                    <a href="./index.html">عربى</a>
                 </div>
             </div>
             <ul>
-                <li>
-                    <a href="./index.html">عربى</a>
-                </li>
-                <li>
-                    <div onclick="show('#acc')" class="drop"> Account <i class="fas fa-sort-down"></i></div>
-                    <div class="menu" id="acc">
-                        <div><a href="#">sign in</a></div>
-                        <div><a href="#">sign up</a></div>
-                    </div>
-                </li>
                 <li>
                     <a href="#">Contact us</a>
                 </li>
@@ -1567,6 +1558,16 @@
                 </li>
                 <li>
                     <a href="#">Offers</a>
+                </li>
+                <li>
+                    <div onclick="show('#acc')" class="drop"> Account <span class="lnr lnr-chevron-down ml-auto"></span></div>
+                    <div class="menu" id="acc">
+                        <div><a href="#">sign in</a></div>
+                        <div><a href="#">sign up</a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Main</a>
                 </li>
             </ul>
         </div>
