@@ -143,6 +143,25 @@ function Search() {
 }
 
 
+$('#search').click(function (e) {
+  if (e.target.id == "search") {
+   
+    $('#search').toggleClass('search-active');
+
+    $('html').removeClass('overflow');
+    
+  }
+});
+
+
+//dropdown slide
+
+$("#sec-items .slide").on("click", function () {
+  $(this).toggleClass("active");
+  $(this).children("ul").slideToggle();
+});
+
+
 
 function show(e){
   $(e).toggleClass('active');
