@@ -357,8 +357,9 @@ nav {
       align-items: center;
       height: 0;
       width: 0;
-      top: 0;
-      left: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       background-color: #000000bf;
       z-index: -1;
       font-size: 18px;
