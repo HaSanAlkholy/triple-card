@@ -23,7 +23,7 @@ html {
   img {
     width: 200px;
     @media (max-width: 767px) {
-      width: 120px;
+      width: 170px;
     }
   }
   .content {
@@ -43,7 +43,7 @@ html {
     margin: 20px 0 0 0;
     transform: rotateY(0deg);
     @media (max-width: 767px) {
-      width: 100px;
+      width: 150px;
     }
     .Shape_1 {
       background-color: $color1;
@@ -110,7 +110,6 @@ html {
   position: relative;
   cursor: pointer;
   display: inline-block;
-  padding-bottom: 5px;
 
   a {
     color: black;
@@ -383,8 +382,7 @@ nav {
           text-align: right;
           transition: all 0.5s;
           height: 40px;
-          padding: 6px 25px;
-          padding-right: 10px;
+          padding: 10px;
           font-size: 18px;
           
           @media(max-width: 576px){
@@ -394,7 +392,7 @@ nav {
   
         button{
           position: absolute;
-          top: 50%;
+          top: 55%;
           left: 20px;
           transform: translate(-50%, -50%);
           border: none;
@@ -543,6 +541,7 @@ nav {
       @media (max-width: 768px) {
         display: flex;
       }
+
 
       div {
         color: black;
@@ -1033,11 +1032,15 @@ html[dir="ltr"] {
 
       .search {
         input {
-          padding-left: 10px;
           text-align: left;
         }
         button {
           left: 95%;
+          
+          @media(max-width:576px){
+            left: 93%;
+            
+          }
         }
       }
   }

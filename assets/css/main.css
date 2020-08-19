@@ -85,7 +85,7 @@ html {
 
 @media (max-width: 767px) {
   .pre-loader img {
-    width: 120px;
+    width: 170px;
   }
 }
 
@@ -109,7 +109,7 @@ html {
 
 @media (max-width: 767px) {
   .pre-loader .progress-bar {
-    width: 100px;
+    width: 150px;
   }
 }
 
@@ -179,7 +179,6 @@ html {
   position: relative;
   cursor: pointer;
   display: inline-block;
-  padding-bottom: 5px;
 }
 
 .dropdown a {
@@ -478,8 +477,7 @@ nav .header-nav .search form input {
   text-align: right;
   transition: all 0.5s;
   height: 40px;
-  padding: 6px 25px;
-  padding-right: 10px;
+  padding: 10px;
   font-size: 18px;
 }
 
@@ -491,7 +489,7 @@ nav .header-nav .search form input {
 
 nav .header-nav .search form button {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 20px;
   transform: translate(-50%, -50%);
   border: none;
@@ -1183,12 +1181,17 @@ html[dir="ltr"] nav .header-icons > div {
 }
 
 html[dir="ltr"] nav .search input {
-  padding-left: 10px;
   text-align: left;
 }
 
 html[dir="ltr"] nav .search button {
   left: 95%;
+}
+
+@media (max-width: 576px) {
+  html[dir="ltr"] nav .search button {
+    left: 93%;
+  }
 }
 
 html[dir="ltr"] .s-head {
